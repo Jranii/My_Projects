@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('game3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* This will make the background image cover the entire screen */
+    overflow: hidden;
+    content: '';
+    display: block;
+    position: 100%;
+    width: 100%;
+    height: 100vh; /* Adjusted to 100vh to fit the entire viewport height */
+    z-index: index 0;
+    cursor: url('other_files/cur.jpg') 16 16, crosshair;
+}
+
+@keyframes duckfly{
+    0%{
+        left:100%;
+        top:10%;
+    }
+    20%{
+        left:80%;
+        top:50%;
+    }
+
+    45%{
+        left:50%;
+        top:30%;
+    }
+
+
+    70%{
+        left:40%;
+        top:45%;
+    }
+    80%{
+        left:20%;
+        top:60%;
+    }
+
+    100%{
+        left:-50%;
+        top:10%;
+    }
+}
+
+
+@keyframes duckfly2 {
+    0% {
+        left: 120%; 
+        top: 5%;    
+    }
+    10%{
+        left:90;
+        top:5%
+    }
+    25% {
+        left: 60%;  
+        top: 40%;   
+    }
+    50% {
+        left: 30%;  
+        top: 20%;   
+    }
+    75% {
+        left: 20%;  
+        top: 10%;   
+    }
+    80% {
+        left: 10%;  
+        top: 40%;   
+    }
+    100% {
+        left: -30%; 
+        top: 5%;    
+    }
+}
+.duck:nth-last-of-type(1) {
+    animation: duckfly 20s linear 0s infinite;
+}
+
+.duck:nth-last-of-type(2) {
+    animation: duckfly2 22s linear 0s infinite;
+}
+
+.duck:nth-last-of-type(3) {
+    animation: duckfly 21s linear 1s infinite;
+}
+
+.duck:nth-last-of-type(4) {
+    animation: duckfly2 22s linear 4s infinite;
+}
+
+.duck:nth-last-of-type(5) {
+    animation: duckfly 23s linear 5s infinite;
+}
+
+.duck:nth-last-of-type(6) {
+    animation: duckfly2 25s linear 6s infinite;
+}
+
+.duck:nth-last-of-type(7) {
+    animation: duckfly 20s linear 7s infinite;
+}
+
+.duck:nth-last-of-type(8) {
+    animation: duckfly2 22s linear 8s infinite;
+}
+
+.duck:nth-last-of-type(9) {
+    animation: duckfly 20s linear 9s infinite;
+}
+
+.duck:nth-last-of-type(10) {
+    animation: duckfly2 20s linear 10s infinite;
+}

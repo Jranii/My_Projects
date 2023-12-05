@@ -1,0 +1,42 @@
+Quack-Attack: Quick Guide
+
+Welcome to Quack-Attack, an engaging and entertaining shooting game where you'll test your skills against flying ducks. Here's a quick guide to get you started:
+
+1. Home Page:
+
+Project Introduction: Learn about the game and its three exciting levels.
+Level Selection: Three levels are initially red; turn them green by completing each level.
+Ready Button: Click "Ready" to start the game.
+Help Button: Access a PDF guide explaining rules and controls.
+
+2. Gameplay:
+
+Level 1 Start: Clicking "Ready" takes you to Level 1.
+Duck Animation: Ducks fly across the screen at varying speeds.
+Shooting Mechanism: Use the cursor as a gun pointer to shoot ducks and score points.
+Level Completion: Score 6 points within 15 chances to proceed to the next level.
+Level Failure: If you can't reach 6 points, you'll be redirected to a losing page with a "Restart" option.
+
+3. Progress Bar:
+
+Positioned at the bottom, it visually represents your progress through the levels.
+Fills up as you successfully shoot ducks, providing real-time feedback.
+Adds a layer of immersion and motivation to the gaming experience.
+
+4. Level Progression:
+
+Advancement: Completing a level changes its color from red to green on the home page.
+Sequential Levels: Progress through three levels, each with increased challenges.
+Final Level: Successfully completing the third level leads to a victory screen.
+
+5. Victory and Defeat:
+
+Victory Screen: Achieve the minimum score in the final level to celebrate your success.
+Restart Option: You can restart the game for a new challenge or to improve your performance.
+Losing Scenario: Falling short redirects you to a losing page with a chance to restart.
+
+6. How It Works:
+
+Click "Ready" to start your duck-shooting adventure.
+Shoot ducks, score points, and progress through levels.
+Complete Level 3 to win, or restart to try again.

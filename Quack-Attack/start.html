@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .help-button {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: rgba(255, 255, 255, 0.637);
+                padding: 1px;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+
+    </style>
+
+    <title>Quack-Attack</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="start">Quack-Attack<br>
+    
+        <button onclick="start()" style="color: white; font-weight: bold;">Ready</button>
+        
+        <!-- Help button -->
+        <button onclick="openHelp()" class="help-button">Help</button>
+
+        <div class="levels">
+            <div class="starting-point">&#9654;</div> <!-- Right-pointing arrow as starting point -->
+            <div class="connector"></div>
+            <div class="level">
+                <div class="level-name">Level 1</div>
+            </div>
+            <div class="connector"></div> <!-- Connecting line -->
+            <div class="level">
+                <div class="level-name">Level 2</div>
+            </div>
+            <div class="connector"></div> <!-- Connecting line -->
+            <div class="level">
+                <div class="level-name">Level 3</div>
+            </div>
+            <div class="connector"></div>
+            <div class="ending-point"></div> 
+        </div>
+    </div>
+    <script>
+        function start() {
+            window.location.replace("levels/game1.html");
+        }
+
+        // Function to open the PDF on clicking the Help button
+        function openHelp() {
+            window.open('other_files/Quack-Attack Quick Guide.txt', '_blank');
+        }
+    </script>
+</body>
+</html>

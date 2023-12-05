@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home.css">
+    <title>Quack-Attack</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="start">Quack-Attack<br>
+    
+        <button onclick="start()"style="color: white; font-weight: bold;">Restart</button>
+        <div class="levels">
+            <div class="starting-point">&#9654;</div> <!-- Right-pointing arrow as starting point -->
+            <div class="connector"></div>
+            <div class="level completed">
+                <div class="level-name">Level 1</div>
+            </div>
+            <div class="connector"></div> <!-- Connecting line -->
+            <div class="level completed">
+                <div class="level-name">Level 2</div>
+            </div>
+            <div class="connector"></div> <!-- Connecting line -->
+            <div class="level completed">
+                <div class="level-name">Level 3</div>
+            </div>
+            <div class="connector"></div>
+            <div class="ending-point"></div> 
+        </div>
+        
+        
+    </div>
+    <script>
+        function start() {
+            window.location.replace("../start.html");
+        }
+    </script>
+</body>
+</html>

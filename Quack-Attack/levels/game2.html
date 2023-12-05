@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="../design.css">
+    <link rel="stylesheet" href="game2.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-container {
+            position: absolute;
+            bottom: 10px;
+            right: 400px;
+            width: 400px; /* Adjust the width as needed */
+            height: 24px;
+            border: 4px solid #ccc;
+            
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background-color: #4CAF50;
+        }
+
+        .score-bar {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onclick="document.getElementById('sound').play(); clickcount();">
+    
+    
+    <audio id="sound" src="sh.mp3" preload="auto"></audio>
+
+    <input type="checkbox" id="duck1" onclick="fun()" class="boxsize">
+    <label for="duck1" class="duck"></label>
+
+    <input type="checkbox" id="duck2" onclick="fun()"  class="boxsize">
+    <label for="duck2" class="duck"></label>
+    
+    <input type="checkbox" id="duck3" onclick="fun()" class="boxsize">
+    <label for="duck3" class="duck"></label>
+
+    <input type="checkbox" id="duck4" onclick="fun()"  class="boxsize">
+    <label for="duck4" class="duck"></label>
+
+    <input type="checkbox" id="duck5" onclick="fun()"  class="boxsize">
+    <label for="duck5" class="duck"></label>
+
+    <input type="checkbox" id="duck6" onclick="fun()"  class="boxsize">
+    <label for="duck6" class="duck"></label>
+
+    <input type="checkbox" id="duck7" onclick="fun()"  class="boxsize">
+    <label for="duck7" class="duck"></label>
+    
+    <input type="checkbox" id="duck8" onclick="fun()" class="boxsize">
+    <label for="duck8" class="duck"></label>
+
+    <input type="checkbox" id="duck9" onclick="fun()" class="boxsize">
+    <label for="duck9" class="duck"></label>
+
+    <input type="checkbox" id="duck10" onclick="fun()" class="boxsize">
+    <label for="duck10" class="duck"></label>
+   
+    <div class="progress-container">
+  
+        <div id="progress" class="progress-bar"></div>
+    </div>
+
+    <div class="score-bar" style="color: rgb(213, 241, 241); font-size: larger; "><b>Progress-bar:</b></div>
+</body>
+
+<!--<div class="score"></div>-->
+
+<script>
+    let progress = 0;
+    let a = 0;
+    let count = 0;
+
+    function fun() {
+        a++;
+        count--;
+        if (a == 6 && count <= 15) {
+            window.location.replace("after2.html");
+            console.log("You Won");
+        }
+        console.log(a);
+        progress += 16.666666;
+        updateProgressBar();
+    }
+
+    function clickcount() {
+        count++;
+        if (count == 15 && a < 6) {
+            window.location.replace("lost.html");
+        }
+        console.log(count);
+    }
+
+    function updateProgressBar() {
+        document.getElementById('progress').style.width = `${progress}%`;
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
