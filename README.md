@@ -21,4 +21,4 @@
 
 ### 2. Quack-Attack
 ##### Tech Stack- HTML, CSS, JavaScript 
-##### https://jranii.github.io/My_Projects/Quack-Attack/
+##### https://jranii.github.io/My_Projects/Quack_Attack/
